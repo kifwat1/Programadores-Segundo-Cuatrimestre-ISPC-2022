@@ -1,4 +1,5 @@
-# Programador-Full-Stack-2022
+#  Programadores-Segundo-Cuatrimestre-ISPC-2022
+
 SPRINT 0
 Fecha Inicio = 17/09/2022 -  Fecha de Fin = 03/10/2022
 Pasos a seguir de acuerdo a las Fases del Ciclo de Vida de un Software:
