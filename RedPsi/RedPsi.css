@@ -1,0 +1,11 @@
+.accordion-item{
+    background-color:#152631;
+  text-align: center;
+  
+}
+body{
+    background: url(./img/pexels-shvets-production-7176325.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 70%;
+}
