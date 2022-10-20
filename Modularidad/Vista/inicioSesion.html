@@ -1,109 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesion Ψ </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"/>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="#">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Iniciar Sesion</title>
+  <body class="bg-primary d-flex justify-content-center align-items-center vh-100">
 
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
+    <div class="bg-white p-5 rounded-5 text-secondary shadow"style="width: 25rem">
+      <div class="d-flex justify-content-center">
+        <img src="img/cuenta.png" alt="login-icon" style="height: 7rem" />
+      </div>
 
+      <div class="text-center fs-1 fw-bold text-primary">Login</div>
 
-
-
-  <!-- Custom styles for this template -->
-  <link href="signin.css" rel="stylesheet">
-</head>
-
-<body>
-  <!-- NAVBAR-->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-    <div class="container">
-      <a href="#" class="navbar-brand">BuscoPsi</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="./index.html" class="nav-link">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a href="#Busca tu profesional" class="nav-link">Busca tu profesional</a>
-          </li>
-          <li class="nav-item">
-            <a href="./registroProfesional.html" class="nav-link">Registro para profesional</a>
-          </li>
-          <li class="nav-item">
-            <a href="#Preguntas Frecuentes" class="nav-link">Preguntas Frecuentes</a>
-          </li>
-          <li class="nav-item">
-            <a href="inicioSesion.html" class="nav-link">Iniciar Sesión</a>
-          </li>
-        </ul>
+      <div class="input-group mt-4">
+        <div class="input-group-text bg-primary">
+        </div>
+        <input class="form-control bg-light" type="text" placeholder="Email"/>
+      </div>
+      <div class="input-group mt-1">
+        <div class="input-group-text bg-primary">
+        </div>
+        <input class="form-control bg-light"type="password"placeholder="Contraseña"/>
+      </div>
+      <div class="d-flex justify-content-around mt-1">
+        <div class="d-flex align-items-center gap-1">
+          <input class="form-check-input" type="checkbox" />
+          <div class="pt-1" style="font-size: 0.9rem">Recordar</div>
+        </div>
+        <div class="pt-1">
+          <a href="#"class="text-decoration-none text-secondary fw-semibold fst-italic" style="font-size: 0.9rem">¿Olvidaste tu contraseña?</a>
+        </div>
+      </div>
+      <div class="btn btn-primary text-white w-100 mt-4 fw-semibold shadow-sm">
+        Login
+      </div>
       </div>
     </div>
-  </nav>
-
-
-  <div class="text-center p-lg-5 m-lg-5">
-
-
-    <main class="form-signin">
-      <form>
-
-        <h1 class="h3 mb-3 fw-normal">Ingrese sesión</h1>
-
-        <div class="form-floating">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput">Email </label>
-        </div>
-        <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-          <label for="floatingPassword">Contraseña</label>
-        </div>
-        
-
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me">Recordarme
-          </label>
-        </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Inicio Sesión</button>
-
-      </form>
-    </main>
-  </div>
-
-
-  <!-- Footer -->
-  <footer class="p-3 bg-dark text-white text-center position-relative">
-    <div class="container">
-      <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Inicio</a></li>
-          <li class="nav-item"><a href="./registroProfesional.html" class="nav-link px-2 text-muted">Registro Profesional</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Facebook</a></li>
-          <li class="nav-item"><a href="./inicioSesion.html" class="nav-link px-2 text-muted">Iniciar Sesion</a></li>
-
-        </ul>
-        <p class="text-center text-muted">&copy; 2022 BuscoPsi</p>
-      </footer>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
-
-
-</body>
-
+  </body>
 </html>
