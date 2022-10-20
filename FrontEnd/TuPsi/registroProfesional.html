@@ -7,76 +7,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Registro Profesionales</title>
+    <title>Registro Profesionales Ψ</title>
 </head>
 
 <body>
-        <!-- NAVBAR-->
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-            <div class="container">
-                <a href="#" class="navbar-brand">BuscoPsi</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="./index.html" class="nav-link">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#Busca tu profesional" class="nav-link">Busca tu profesional</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./registroProfesional.html" class="nav-link">Registro para profesional</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#Preguntas Frecuentes" class="nav-link">Preguntas Frecuentes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="inicioSesion.html" class="nav-link">Iniciar Sesión</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    
-   
- <h1 class="text-center m-lg-4
- p-lg-5">Registro Profesionales</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">TuPsi </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-2 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Buscar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./registroProfesional.html"> Registro Profesional </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="inicioSesion.html">Iniciar Sesión</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
 
-    <form class="row g-3 m-lg-4
-     p-lg-5">
-        <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Nombre y Apellido</label>
-            <input type="email" class="form-control" id="inputEmail4">
+<h1 class="text-center m-lg-4 p-5">Registro Profesionales</h1>
+
+<div class="container">
+    <form class="row g-3 mt-3">
+        <div class="col-6">
+            <label for="inputName" class="form-label text-primary" >*Nombre</label>
+            <input type="name" class="form-control" id="inputName">
         </div>
-        <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="inputPassword4">
+        <div class="col-6">
+            <label for="inputLastName" class="form-label text-primary">*Apellido</label>
+            <input type="text" class="form-control" id="inputLastName">
+        </div>
+        <div class="col-6">
+            <label for="inputEmail" class="form-label text-primary">*Email</label>
+            <input type="email" class="form-control" id="inputEmail">
+        </div>
+        <div class="col-6">
+            <label for="inputPassword" class="form-label text-primary">*Contraseña</label>
+            <input type="password" class="form-control" id="inputPassword">
         </div>
         <div class="col-12">
-            <label for="inputAddress" class="form-label">Rama de la Psicologia</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="psicoanalisis, terapia familiar">
+            <label for="inputTherapy" class="form-label text-primary">*Tipos de terapia</label>
+            <input type="text" class="form-control" id="inputTherapy" placeholder="Psicoanalisis, Terapia Familiar">
         </div>
-        <div class="col-12">
-            <label for="inputAddress2" class="form-label">Provincia</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="...">
+        <div class="col-6">
+            <label for="inputState" class="form-label text-primary">*Provincia</label>
+            <select id="inputState" class="form-select">
+              <option selected>Elegir...</option>
+              <option>Buenos Aires</option>
+              <option>Ciudad Autónoma de Buenos Aires</option>
+              <option>Catamarca</option>
+              <option>Chaco</option>
+              <option>Chubut</option>
+              <option>Córdoba</option>
+              <option>Corrientes</option>
+              <option>Entre Ríos</option>
+              <option>Formosa</option>
+              <option>Jujuy</option>
+              <option>La Pampa</option>
+              <option>La Rioja</option>
+              <option>Mendoza</option>
+              <option>Misiones</option>
+              <option>Neuquén</option>
+              <option>Río Negro</option>
+              <option>Salta</option>
+              <option>San Juan</option>
+              <option>San Luis</option>
+              <option>Santa Cruz</option>
+              <option>Santa Fe</option>
+              <option>Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+              <option>Tucuman</option>
+            </select>
         </div>
-        <div class="col-md-6">
-            <label for="inputCity" class="form-label">Ciudad</label>
-            <input type="text" class="form-control" id="inputCity">
-        </div>
-       
-        <div class="col-md-2">
-            <label for="number" class="form-label">Telefono</label>
-            <input type="number" class="form-control" id="inputZip">
+
+        <div class="col-6">
+            <label for="inputTelephone" class="form-label text-primary">Telefono</label>
+            <input type="text" class="form-control" id="inputTelephone">
         </div>
         <div class="col-12">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                    Contactarme
+                <input type="checkbox" id="checkTerms" class="form-check-input">
+                <label class="form-check-label" for="checkTerms">
+                    Acepto los términos
                 </label>
             </div>
         </div>
@@ -84,25 +106,9 @@
             <button type="submit" class="btn btn-primary">Registrarme</button>
         </div>
     </form>
+</div>
+<br><br>
 
-
-      <!-- Footer -->
-      <footer class="p-sm-2 bg-dark text-white text-center position-relative">
-        <div class="container">
-            <footer class="py-3 my-4">
-              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Inicio</a></li>
-                <li class="nav-item"><a href="./registroProfesional.html" class="nav-link px-2 text-muted">Registro Profesional</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Facebook</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Instagram</a></li>
-            
-              </ul>
-              <p class="text-center text-muted">&copy; 2022 BuscoPsi</p>
-            </footer>
-          </div>
-    </footer>
-
-  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
