@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">TuPsi </a>
+        <a class="navbar-brand" href="./index.html">TuPsi </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,7 +23,7 @@
                 <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Buscar</a>
+                <a class="nav-link" href="./contactarPsicologo.html">Buscar</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./registroProfesional.html"> Registro Profesional </a>
@@ -48,6 +48,29 @@
             <label for="inputLastName" class="form-label text-primary">*Apellido</label>
             <input type="text" class="form-control" id="inputLastName">
         </div>
+       
+        <div class="col-6">
+            <label for="inputState" class="form-label text-primary">Sexo</label>
+            <select id="inputState" class="form-select">
+              <option selected>Elegir...</option>
+              <option>Femenino</option>
+              <option>Maculino</option>
+              <option>Otro</option>
+             
+            </select>
+        </div>
+        <div class="col-6">
+            <label for="inputCuil" class="form-label text-primary">Cuil</label>
+            <input type="number" class="form-control" id="inputLastName">
+        </div>
+        <div class="col-6">
+            <label for="inputFechaN" class="form-label text-primary">Fecha de Nacimiento</label>
+            <input type="datetime-local" id="fechahora" name="fechahora"/>
+        </div>
+        <div class="col-6">
+            <label for="inputprofesion" class="form-label text-primary">Colegio o ente regulador de la profesión</label>
+            <input type="text" class="form-control" id="inputProfesion">
+        </div>
         <div class="col-6">
             <label for="inputEmail" class="form-label text-primary">*Email</label>
             <input type="email" class="form-control" id="inputEmail">
@@ -56,9 +79,13 @@
             <label for="inputPassword" class="form-label text-primary">*Contraseña</label>
             <input type="password" class="form-control" id="inputPassword">
         </div>
-        <div class="col-12">
+        <div class="col-6">
             <label for="inputTherapy" class="form-label text-primary">*Tipos de terapia</label>
-            <input type="text" class="form-control" id="inputTherapy" placeholder="Psicoanalisis, Terapia Familiar">
+            <input type="text" class="form-control" id="inputTherapy" placeholder="Terapia Familiar...Terapia Individual...">
+        </div>
+        <div class="col-6">
+            <label for="inputName" class="form-label text-primary" >Matricula</label>
+            <input type="text" class="form-control" id="inputName">
         </div>
         <div class="col-6">
             <label for="inputState" class="form-label text-primary">*Provincia</label>
