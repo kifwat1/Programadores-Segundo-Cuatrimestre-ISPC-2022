@@ -50,7 +50,10 @@
                         años de experiencia en las distintas corrientes psicologicas.
                         <br>Elegí al profesional que te brindara su apoyo y contactate con el o ella.
                     </p>
-                    
+                    <button
+                    class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                    Contacto
+                    </button>
                 </div>
                 <!--poner imagen?-->
                 <img class="img-fluid w-50 d-none d-sm-block" src="img/Psy-blue.svg" alt="" />
@@ -194,6 +197,43 @@
             </div>
         </div>
 <br>
+<!-- contacto-->
+<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Contacto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+        </div>
+        <div class="modal-body">
+            <p class="lead">Completa este formulario para contactarse con TuPsi</p>
+
+            <form>
+            <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                Nombre Completo
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+            </div>
+            <div class="mb-3">
+                <label for="email" class="col-form-label">Email</label>
+                <input type="email" class="form-control" id="email" />
+            </div>
+            <div class="mb-3">
+                <label for="message" class="col-form-label"> Mensaje</label>
+                <textarea class="form-control" id="message" name="Message"></textarea>
+            </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Cerrar
+            </button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+        </div>
+    </div>
+</div>
 <!-- Footer -->
         <footer class="bg-primary text-center">
             <div class="container">
