@@ -39,57 +39,50 @@
 <h1 class="text-center m-lg-4 p-5">Registro Profesionales</h1>
 
 <div class="container">
-    <form class="row g-3 mt-3">
+    <form class="row g-3 mt-3" id="registro" action="" method="post">
         <div class="col-6">
-            <label for="inputName" class="form-label text-primary" >*Nombre</label>
-            <input type="name" class="form-control" id="inputName">
+            <label for="inputName" class="form-label text-primary" id="Nombre" >*Nombre</label>
+            <input name="nombre" type="name" class="form-control" id="inputName" required>
         </div>
+
         <div class="col-6">
-            <label for="inputLastName" class="form-label text-primary">*Apellido</label>
-            <input type="text" class="form-control" id="inputLastName">
+            <label for="inputLastName" class="form-label text-primary" id="Apellido">*Apellido</label>
+            <input name="apellido" type="text" class="form-control" id="inputLastName" required>
         </div>
-       
+
         <div class="col-6">
-            <label for="inputState" class="form-label text-primary">Sexo</label>
+            <label for="inputEmail" class="form-label text-primary" id="Email">*Email</label>
+            <input name="email" type="email" class="form-control" id="inputEmail" required>
+        </div>
+
+        <div class="col-6">
+            <label for="inputPassword" class="form-label text-primary" minlength="6" maxlength="15" id="Contraseña">*Contraseña</label>
+            <input name="contraseña" type="password" class="form-control" id="inputPassword" required>
+        </div>
+
+        <div class="col-6">
+            <label for="inputTherapy" class="form-label text-primary" id="TipoTerapia">*Tipos de terapia</label>
+            <input name="terapia" type="text" class="form-control" id="inputTherapy" placeholder="Terapia Familiar...Terapia Individual..." required>
+        </div>
+
+        <div class="col-6">
+            <label for="inputName" class="form-label text-primary" id="Matricula" >*Matricula</label>
+            <input name="matricula" type="text" class="form-control" id="inputName" required>
+        </div>
+
+        <div class="col-6">
+            <label for="inputState" class="form-label text-primary" id="Sexo">Sexo</label>
             <select id="inputState" class="form-select">
               <option selected>Elegir...</option>
               <option>Femenino</option>
-              <option>Maculino</option>
+              <option>Masculino</option>
               <option>Otro</option>
-             
             </select>
         </div>
+
         <div class="col-6">
-            <label for="inputCuil" class="form-label text-primary">Cuil</label>
-            <input type="number" class="form-control" id="inputLastName">
-        </div>
-        <div class="col-6">
-            <label for="inputFechaN" class="form-label text-primary">Fecha de Nacimiento</label>
-            <input type="datetime-local" id="fechahora" name="fechahora"/>
-        </div>
-        <div class="col-6">
-            <label for="inputprofesion" class="form-label text-primary">Colegio o ente regulador de la profesión</label>
-            <input type="text" class="form-control" id="inputProfesion">
-        </div>
-        <div class="col-6">
-            <label for="inputEmail" class="form-label text-primary">*Email</label>
-            <input type="email" class="form-control" id="inputEmail">
-        </div>
-        <div class="col-6">
-            <label for="inputPassword" class="form-label text-primary">*Contraseña</label>
-            <input type="password" class="form-control" id="inputPassword">
-        </div>
-        <div class="col-6">
-            <label for="inputTherapy" class="form-label text-primary">*Tipos de terapia</label>
-            <input type="text" class="form-control" id="inputTherapy" placeholder="Terapia Familiar...Terapia Individual...">
-        </div>
-        <div class="col-6">
-            <label for="inputName" class="form-label text-primary" >Matricula</label>
-            <input type="text" class="form-control" id="inputName">
-        </div>
-        <div class="col-6">
-            <label for="inputState" class="form-label text-primary">*Provincia</label>
-            <select id="inputState" class="form-select">
+            <label for="inputState" class="form-label text-primary" id="Provincia">*Provincia</label>
+            <select id="inputState" class="form-select" required>
               <option selected>Elegir...</option>
               <option>Buenos Aires</option>
               <option>Ciudad Autónoma de Buenos Aires</option>
@@ -117,20 +110,17 @@
             </select>
         </div>
 
-        <div class="col-6">
-            <label for="inputTelephone" class="form-label text-primary">Telefono</label>
-            <input type="text" class="form-control" id="inputTelephone">
-        </div>
         <div class="col-12">
             <div class="form-check">
                 <input type="checkbox" id="checkTerms" class="form-check-input">
-                <label class="form-check-label" for="checkTerms">
+                <label class="form-check-label" for="checkTerms" required>
                     Acepto los términos
                 </label>
             </div>
         </div>
+
         <div class="col-12">
-            <button type="submit" class="btn btn-primary">Registrarme</button>
+            <button type="submit" value="Registrarse" class="btn btn-primary">Registrarme</button>
         </div>
     </form>
 </div>
@@ -141,7 +131,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-
+    <script src="/js/1.Registro.js"></script>
 </body>
 
 </html>
