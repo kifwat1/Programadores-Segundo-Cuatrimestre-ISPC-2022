@@ -14,7 +14,8 @@ try:
 
    
     mySql_insert_query = """INSERT INTO PACIENTE_CONSULTOR(DNI_PACIENTE,NOMBRE,APELLIDO,EMAIL,TELEFONO,FECHA_NAC,SEXO ) VALUES
-(8888888, 'Taoufik','Saidi', 'esun-mail-deprueba@gnail.com', 045678987,'1999-01-01','Masculino');"""
+(208963578, 'Taoufik','Saidi', 'esun-mail-deprueba@gmail.com', 045678987,'1999-01-01','Masculino');"""
+   
 
          
     cursor = connection.cursor()

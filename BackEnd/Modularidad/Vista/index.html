@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/TuPsi.css">
-    <Title> TuPsi Ψ</Title>
+    <Title> TuPsi Ψ </Title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <!-- NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">TuPsi </a>
+        <a class="navbar-brand" href="./index.html">TuPsi </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,7 +25,7 @@
                 <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Buscar</a>
+                <a class="nav-link" href="./contactarPsicologo.html">Buscar</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./registroProfesional.html"> Registro Profesional </a>
@@ -50,7 +50,10 @@
                         años de experiencia en las distintas corrientes psicologicas.
                         <br>Elegí al profesional que te brindara su apoyo y contactate con el o ella.
                     </p>
-                    
+                    <button
+                    class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                    Contacto
+                    </button>
                 </div>
                 <!--poner imagen?-->
                 <img class="img-fluid w-50 d-none d-sm-block" src="img/Psy-blue.svg" alt="" />
@@ -100,6 +103,7 @@
                     <div class="col-md">
                         <img src="img/Questions-pana.svg" class="img-fluid" alt="" />
                     </div>
+                    
                     <div class="col-md p-4">
                         <h2 class="text-primary">Registro para profesionales</h2>
                         <p>
@@ -194,6 +198,43 @@
             </div>
         </div>
 <br>
+<!-- contacto-->
+<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Contacto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+        </div>
+        <div class="modal-body">
+            <p class="lead">Completa este formulario para contactarse con TuPsi</p>
+
+            <form id="contacto">
+            <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                Nombre Completo
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+            </div>
+            <div class="mb-3">
+                <label for="email" class="col-form-label">Email</label>
+                <input type="email" class="form-control" id="email" />
+            </div>
+            <div class="mb-3">
+                <label for="message" class="col-form-label"> Mensaje</label>
+                <textarea class="form-control" id="message" name="Message"></textarea>
+            </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Cerrar
+            </button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+        </div>
+    </div>
+</div>
 <!-- Footer -->
         <footer class="bg-primary text-center">
             <div class="container">
@@ -214,7 +255,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
+        <script src="/javascript/1.Registro.js"></script>
 
+        
 </body>
 
 </html>

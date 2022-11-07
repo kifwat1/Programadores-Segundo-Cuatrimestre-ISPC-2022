@@ -6,7 +6,7 @@ try:
                                        user='root',
                                        password='KIFWAT', port= '3306')
 
-    mySql_query = "select * from psicologo where nombre like 'si'"
+    mySql_query = "select * from psicologo where nombre like 'Fernanda'"
         
         
 

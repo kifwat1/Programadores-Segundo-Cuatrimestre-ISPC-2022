@@ -1,5 +1,7 @@
 
 #Insercion multimples,insercion de varios registros a la vez
+#Insert various dates using lists and tuples
+
 
 import mysql.connector
 
@@ -9,10 +11,12 @@ try:
                                        user='root',
                                        password='KIFWAT', port= '3306')
 
-    mySql_insert_query = """INSERT INTO PSICOLOGO (NOMBRE, APELLIDO, SEXO, CUIL, FECHA_DE_NACIOMIENTO, COLEGIO_REGULADOR, EMAIL, CONTRASEÑA, TELEFONO)
+    mySql_insert_query = """INSERT INTO PSICOLOGO (NOMBRE, APELLIDO, EMAIL, CONTRASEÑA, MATRICULA, SEXO, UBICACION, TIPOS_DE_TERAPIA, PACIENTE_CONSULTOR)
                            VALUES (%s,%s, %s, %s, %s,%s, %s, %s, %s)"""
 
-    records_to_insert =[('Sigmund', 'Freud', 'Hombre', 5124541, '1958-01-01', 'Colegio de Freud','freud@gmail.com','freud999',747474)]
+    records_to_insert =[
+        ('Sigmund', 'Freud','freud@gmail.com','freud88',75689, 'Masculino', 1, 1,208963578),
+        ('Fernanda', 'Alonso', 'Alonso@gmail.com','alonso88',689687,'Feminino', 2, 2, 208963578)]
                          ####Ejemplos para probar el funcionamiento del registro.
  
 

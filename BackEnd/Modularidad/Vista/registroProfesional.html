@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Registro Profesionales Ψ </title>
+    <title>Registro Profesionales Ψ</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">TuPsi </a>
+        <a class="navbar-brand" href="./index.html">TuPsi </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,7 +23,7 @@
                 <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Buscar</a>
+                <a class="nav-link" href="./contactarPsicologo.html">Buscar</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./registroProfesional.html"> Registro Profesional </a>
@@ -39,30 +39,50 @@
 <h1 class="text-center m-lg-4 p-5">Registro Profesionales</h1>
 
 <div class="container">
-    <form class="row g-3 mt-3">
+    <form class="row g-3 mt-3" id="registro" action="" method="post">
         <div class="col-6">
-            <label for="inputName" class="form-label text-primary" >*Nombre</label>
-            <input type="name" class="form-control" id="inputName">
+            <label for="inputName" class="form-label text-primary" id="Nombre" >*Nombre</label>
+            <input name="nombre" type="name" class="form-control" id="inputName" required>
         </div>
+
         <div class="col-6">
-            <label for="inputLastName" class="form-label text-primary">*Apellido</label>
-            <input type="text" class="form-control" id="inputLastName">
+            <label for="inputLastName" class="form-label text-primary" id="Apellido">*Apellido</label>
+            <input name="apellido" type="text" class="form-control" id="inputLastName" required>
         </div>
+
         <div class="col-6">
-            <label for="inputEmail" class="form-label text-primary">*Email</label>
-            <input type="email" class="form-control" id="inputEmail">
+            <label for="inputEmail" class="form-label text-primary" id="Email">*Email</label>
+            <input name="email" type="email" class="form-control" id="inputEmail" required>
         </div>
+
         <div class="col-6">
-            <label for="inputPassword" class="form-label text-primary">*Contraseña</label>
-            <input type="password" class="form-control" id="inputPassword">
+            <label for="inputPassword" class="form-label text-primary" minlength="6" maxlength="15" id="Contraseña">*Contraseña</label>
+            <input name="contraseña" type="password" class="form-control" id="inputPassword" required>
         </div>
-        <div class="col-12">
-            <label for="inputTherapy" class="form-label text-primary">*Tipos de terapia</label>
-            <input type="text" class="form-control" id="inputTherapy" placeholder="Psicoanalisis, Terapia Familiar">
-        </div>
+
         <div class="col-6">
-            <label for="inputState" class="form-label text-primary">*Provincia</label>
-            <select id="inputState" class="form-select">
+            <label for="inputTherapy" class="form-label text-primary" id="TipoTerapia">*Tipos de terapia</label>
+            <input name="terapia" type="text" class="form-control" id="inputTherapy" placeholder="Terapia Familiar...Terapia Individual..." required>
+        </div>
+
+        <div class="col-6">
+            <label for="inputName" class="form-label text-primary" id="Matricula" >*Matricula</label>
+            <input name="matricula" type="text" class="form-control" id="inputName" required>
+        </div>
+
+        <div class="col-6">
+            <label for="inputSexo" class="form-label text-primary" id="Sexo">Sexo</label>
+            <select id="inputSexo" class="form-select">
+              <option selected>Elegir...</option>
+              <option>Femenino</option>
+              <option>Masculino</option>
+              <option>Otro</option>
+            </select>
+        </div>
+
+        <div class="col-6">
+            <label for="inputState" class="form-label text-primary" id="Provincia">*Provincia</label>
+            <select id="inputState" class="form-select" required>
               <option selected>Elegir...</option>
               <option>Buenos Aires</option>
               <option>Ciudad Autónoma de Buenos Aires</option>
@@ -88,33 +108,32 @@
               <option>Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
               <option>Tucuman</option>
             </select>
+            
         </div>
 
-        <div class="col-6">
-            <label for="inputTelephone" class="form-label text-primary">Telefono</label>
-            <input type="text" class="form-control" id="inputTelephone">
-        </div>
         <div class="col-12">
             <div class="form-check">
                 <input type="checkbox" id="checkTerms" class="form-check-input">
-                <label class="form-check-label" for="checkTerms">
+                <label class="form-check-label" for="checkTerms" required>
                     Acepto los términos
                 </label>
             </div>
         </div>
         <div class="col-12">
-            <button type="submit" class="btn btn-primary">Registrarme</button>
+            <button type="submit" value="Registrarse" class="btn btn-primary">Registrarme</button>
         </div>
     </form>
 </div>
 <br><br>
 
 
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-
+    <script src="/javascript/1.Registro.js"></script>
 </body>
 
 </html>

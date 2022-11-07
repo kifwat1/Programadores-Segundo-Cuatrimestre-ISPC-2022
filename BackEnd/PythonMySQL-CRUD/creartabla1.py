@@ -23,17 +23,15 @@ try:
                                                                   
     mySql_Create_Table_Query4 ="""CREATE TABLE PSICOLOGO(NOMBRE VARCHAR(100) NOT NULL,
                                                                  APELLIDO VARCHAR (100) NOT NULL,
-                                                                 SEXO VARCHAR(15) NOT NULL,
-                                                                 CUIL INT UNIQUE NOT NULL,
-                                                                 FECHA_DE_NACIOMIENTO DATE,
-                                                                 COLEGIO_REGULADOR VARCHAR(100) NOT NULL,
                                                                  EMAIL VARCHAR(45),
                                                                  CONTRASEÑA VARCHAR(8),
-                                                                 TELEFONO BIGINT,
+                                                                 MATRICULA INT UNIQUE NOT NULL,
+                                                                 SEXO VARCHAR(15) NOT NULL,
                                                                  UBICACION INT,
                                                                  TIPOS_DE_TERAPIA INT,
                                                                  PACIENTE_CONSULTOR INT,
-                                                                 CONSTRAINT PK_CUIL PRIMARY KEY (CUIL),
+                                                                 CONSTRAINT PK_MATRICULA PRIMARY KEY (MATRICULA),
+
                                                                  CONSTRAINT FK_UBIC_ID FOREIGN KEY (UBICACION) REFERENCES UBICACION (ID),
                                                                  CONSTRAINT FK_TIPOS_DE_TERAPIA FOREIGN KEY (TIPOS_DE_TERAPIA) REFERENCES TIPOS_DE_TERAPIA(ID),
                                                                  CONSTRAINT FK_PACIENTE_CONSULTOR FOREIGN KEY (PACIENTE_CONSULTOR) REFERENCES PACIENTE_CONSULTOR (DNI_PACIENTE))"""

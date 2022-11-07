@@ -7,7 +7,7 @@ try:
                                        user='root',
                                        password='KIFWAT', port= '3306')
 
-    mySql_insert_query = " UPDATE psicologo SET  nombre='Sliman Labiad' WHERE CUIL='4124541';"
+    mySql_insert_query = " UPDATE psicologo SET  nombre='Sliman Labiad' WHERE MATRICULA= 75689;"
 
     
     cursor = connection.cursor()
